@@ -1,0 +1,133 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="~/css/form.css" />
+  </head>
+  <body>
+
+    <div class="tital">
+      <h1>Fill this form correctly to access a calculater </h1>
+    </div>
+
+    
+
+    <form id="form" action="">
+
+      <div id="outer-div">
+
+        <div id="inner-div">
+          
+          <label class="main-lable" for="fname">First Name *</label>
+          <input
+            class="input-width"
+            id="fname"
+            
+            type="text"
+            placeholder="Enter your first name"
+          />
+          
+          
+          <br /><br />
+
+          <label class="main-lable" for="lname">Last Name *</label>
+          <input
+            
+            class="input-width"
+            id="lname"
+            type="text"
+            placeholder="Enter your last name"
+          />
+          <br />
+          <br />
+
+          <h4>Classificaton</h4>
+          <input
+            type="radio"
+            name="classificaton"
+            id="Freshman"
+            value="Freshman"
+          />
+          <label for="Freshman">Freshman</label>
+          <br />
+          <input
+            type="radio"
+            name="classificaton"
+            id="Sophomore"
+            value="Sophomore"
+          />
+          <label for="Sophomore">Sophomore</label>
+          <br />
+          <input type="radio" name="classificaton" id="Jonior" value="Jonior" />
+          <label for="Jonior">Jonior</label>
+          <br />
+          <input type="radio" name="classificaton" id="Senior" value="Senior" />
+          <label for="Senior">Senior</label>
+          <br />
+          <input
+            type="radio"
+            name="classificaton"
+            id="Graduate"
+            value="Graduate"
+          />
+          <label for="Graduate">Graduate</label>
+          <br />
+          <br />
+
+          <label class="main-lable" for="email">Email *</label>
+          <input
+            
+            class="input-width"
+            id="email"
+            type="text"
+            placeholder="xxxxxxx@gmail.com"
+          />
+          <br />
+          <br />
+
+          <label class="main-lable" for="phone">Phone *</label>
+          <input class="input-width" placeholder="xxxxxxxxxx (0-9)"  id="phone" type="text" />
+          <br />
+          <br />
+
+          <label class="main-lable" for="course">You are best at:</label>
+          <select name="course" id="course">
+            <option value="html">HTML</option>
+            <option value="css" >CSS </option>
+            <option value="Javascript">JS</option>
+          </select>
+          <br />
+          <br />
+
+          <h4>Programming Language you want to learn?</h4>
+          <input type="checkbox" name="c" id="c" value="C" />
+          <label for="c">C</label>
+          <br />
+          <input type="checkbox" name="c#" id="c#" value="C#" />
+          <label for="c#">C#</label>
+          <br />
+          <input type="checkbox" name="java" id="java" value="Java" />
+          <label for="java">Java</label>
+
+        </div>
+        
+      </div>
+
+      <div id="btn-div">
+        <button type="submit" >Submit</button>
+      </div>
+
+    </form>
+
+    <script src="~/js/form.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,63 @@
+﻿#calcu-body {
+    display: flex;
+    background-color: red;
+    margin: 10% 30% 0% 30%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#display {
+    background-color: rgba(255, 255, 255, 0.774);
+    flex-basis: 100%;
+    margin: 4% 5% 4% 5%;
+    padding: 3%;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.562);
+    flex-basis: 21%;
+    text-align: center;
+    margin: 5px;
+    padding: 2% 0% 2% 0%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+    .btn:hover {
+        background-color: rgba(255, 255, 255, 0.397);
+    }
+
+.btn-top {
+    background-color: rgba(255, 255, 255, 0.562);
+    flex-basis: 16%;
+    text-align: center;
+    margin: 5px;
+    padding: 1% 0% 1% 0%;
+    border-radius: 5px;
+}
+
+    .btn-top:hover {
+        background-color: rgba(255, 255, 255, 0.397);
+    }
+
+#delete {
+    background-color: rgba(255, 255, 0, 0.795);
+}
+
+    #delete:hover {
+        background-color: rgba(255, 255, 0, 0.582);
+    }
+
+#equal,
+#zero,
+#dot,
+#divide {
+    margin-bottom: 4%;
+}
+
+input {
+    border: none;
+}

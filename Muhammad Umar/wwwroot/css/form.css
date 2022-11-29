@@ -1,0 +1,60 @@
+﻿body,
+h4 {
+    margin: 0%;
+}
+
+.tital {
+    text-align: center;
+}
+
+h1 {
+    margin: 5% 25% 0% 25%;
+    border-radius: 25px;
+    background-color: #ffaaaa9d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form {
+    margin: 3% 15% 0% 15%;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#outer-div {
+    overflow: hidden;
+    margin: 10% 10% 0% 10%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+#inner-div {
+    margin: 7%;
+}
+
+input,
+select {
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 5px;
+}
+
+.main-lable {
+    font-weight: bold;
+}
+
+.input-width {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#btn-div {
+    text-align: center;
+    margin: 15px;
+}
+
+button {
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.507);
+}
