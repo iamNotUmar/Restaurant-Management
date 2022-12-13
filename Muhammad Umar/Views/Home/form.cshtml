@@ -1,8 +1,14 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+
+@model Muhammad_Umar.Models.formData 
+
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,14 +19,16 @@
     <link rel="stylesheet" href="~/css/form.css" />
   </head>
   <body>
-
+     
     <div class="tital">
-      <h1>Fill this form correctly to access a calculater </h1>
+      <h1>Fill this form correctly </h1>
     </div>
 
-    
+    <div>
+        <h3 style="color: red">@ViewData["messege"]</h3>
+    </div>
 
-    <form id="form" action="">
+    <form id="form" asp-action= "Index" asp-controller = "Home" method="post" >
 
       <div id="outer-div">
 
@@ -29,8 +37,9 @@
           <label class="main-lable" for="fname">First Name *</label>
           <input
             class="input-width"
+            required
             id="fname"
-            
+            name="fname"
             type="text"
             placeholder="Enter your first name"
           />
@@ -42,7 +51,9 @@
           <input
             
             class="input-width"
+            required
             id="lname"
+            name="lname"
             type="text"
             placeholder="Enter your last name"
           />
@@ -84,22 +95,23 @@
 
           <label class="main-lable" for="email">Email *</label>
           <input
-            
+            required
             class="input-width"
             id="email"
-            type="text"
+            name="email"
+            type="email"
             placeholder="xxxxxxx@gmail.com"
           />
           <br />
           <br />
 
           <label class="main-lable" for="phone">Phone *</label>
-          <input class="input-width" placeholder="xxxxxxxxxx (0-9)"  id="phone" type="text" />
+          <input class="input-width" required placeholder="xxxxxxxxxx (0-9)"  id="phone" type="text" name="phone" />
           <br />
           <br />
 
           <label class="main-lable" for="course">You are best at:</label>
-          <select name="course" id="course">
+          <select name="course" id="course" >
             <option value="html">HTML</option>
             <option value="css" >CSS </option>
             <option value="Javascript">JS</option>
@@ -108,13 +120,13 @@
           <br />
 
           <h4>Programming Language you want to learn?</h4>
-          <input type="checkbox" name="c" id="c" value="C" />
+          <input type="checkbox" name="language" id="c" value="C" />
           <label for="c">C</label>
           <br />
-          <input type="checkbox" name="c#" id="c#" value="C#" />
+          <input type="checkbox" name="language" id="c#" value="C#" />
           <label for="c#">C#</label>
           <br />
-          <input type="checkbox" name="java" id="java" value="Java" />
+          <input type="checkbox" name="language" id="java" value="Java" />
           <label for="java">Java</label>
 
         </div>
@@ -127,7 +139,7 @@
 
     </form>
 
-    <script src="~/js/form.js"></script>
+    
 
   </body>
 </html>
